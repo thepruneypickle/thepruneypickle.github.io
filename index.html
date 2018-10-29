@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
   <script>
+    var nouns = [];
     fetch('./assets/dictionary/nouns.txt')
     .then(response => response.text())
-    .then(text => console.log(text))
+    .then(text => nouns.push(text))
   </script>
   <head>
     <title>The Pruney Pickle</title>
