@@ -16,9 +16,8 @@
       
       
       console.log(adjs[0] + nouns[0] + verbs[0]);
+      document.getElementById("thetext").innerHTML = adjs[0] + nouns[0] + verbs[0];
     }
-    
-    gen_excuse();
   </script>
   <head>
     <title>The Pruney Pickle</title>
@@ -28,5 +27,11 @@
     <p align="center">
       <img src="PBJ_Time_Pickle.gif" width="340" height="325" alt="" align="middle">
     </p>
+    <br>
+    <br>
+    <h1 align="center">Excuse Generator</h1>
+    <p align="center", id = "thetext"></p>
+    <br>
+    <button onclick="gen_excuse()" type="button">Generate New Excuse!</button>
   </body>
 </html>
