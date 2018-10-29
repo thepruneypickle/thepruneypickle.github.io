@@ -14,7 +14,7 @@
       const text_3 = await response_3.text();
       const verbs = await text_3.split('\n');
       
-      document.getElementById("thetext").innerHTML = 'My' + nouns[Math.floor(Math.random() * nouns.length)] + 'is' + adjs[Math.floor(Math.random() * adjs.length)] + 'and I need to' + verbs[Math.floor(Math.random() * verbs.length)];
+      document.getElementById("thetext").innerHTML = 'My ' + nouns[Math.floor(Math.random() * nouns.length)] + 'is ' + adjs[Math.floor(Math.random() * adjs.length)] + 'and I need to ' + verbs[Math.floor(Math.random() * verbs.length)] + 'a ' + nouns[Math.floor(Math.random() * nouns.length)];
     }
     gen_excuse();
   </script>
