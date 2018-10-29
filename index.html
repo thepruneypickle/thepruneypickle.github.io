@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html>
   <script>
-    async function load_adj () {
+    async function gen_excuse () {
       const response = await fetch('./assets/dictionary/adjectives.txt');
       const text = await response.text();
-      const adj = await text.split('\n');
-      console.log(adj[0]);
+      const adjs = await text.split('\n');
+      
+      const response = await fetch('./assets/dictionary/nouns.txt');
+      const text = await response.text();
+      const nouns = await text.split('\n');
+      
+      const response = await fetch('./assets/dictionary/verbs.txt');
+      const text = await response.text();
+      const verbs = await text.split('\n');
+      
+      
+      console.log(adjs[0] + nouns[0] + verbs[0]);
     }
     
-    adj = load_adj();
+    gen_excuse();
   </script>
   <head>
     <title>The Pruney Pickle</title>
