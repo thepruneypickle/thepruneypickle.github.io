@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
   <script>
-    const load_adj = async () => {
-    const response = await fetch('./assets/dictionary/adjectives.txt');
-    const text = await response.text();
-    adj = await text.split('\n');
-    await return adj;
+    async function load_adj () {
+      const response = await fetch('./assets/dictionary/adjectives.txt');
+      const text = await response.text();
+      const adj = await text.split('\n');
+      return await adj;
     }
     
     adj = load_adj();
