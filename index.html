@@ -5,12 +5,10 @@
       const response = await fetch('./assets/dictionary/adjectives.txt');
       const text = await response.text();
       const adj = await text.split('\n');
-      return await adj;
+      console.log(adj[0]);
     }
     
     adj = load_adj();
-    
-    await console.log(adj[0]);
   </script>
   <head>
     <title>The Pruney Pickle</title>
