@@ -14,9 +14,7 @@
       const text_3 = await response_3.text();
       const verbs = await text_3.split('\n');
       
-      
-      console.log(adjs[Math.floor(Math.random() * adjs.length)] + nouns[Math.floor(Math.random() * nouns.length)] + verbs[Math.floor(Math.random() * verbs.length)]);
-      document.getElementById("thetext").innerHTML = adjs[Math.floor(Math.random() * adjs.length)] + nouns[Math.floor(Math.random() * nouns.length)] + verbs[Math.floor(Math.random() * verbs.length)];
+      document.getElementById("thetext").innerHTML = 'My' + nouns[Math.floor(Math.random() * nouns.length)] + 'is' + adjs[Math.floor(Math.random() * adjs.length)] + 'and I need to' + verbs[Math.floor(Math.random() * verbs.length)];
     }
     gen_excuse();
   </script>
@@ -32,6 +30,6 @@
     <h1 align="center">Excuse Generator</h1>
     <p align="center" id = "thetext"></p>
     <br>
-    <button align="center" onclick="gen_excuse()" type="button">Generate New Excuse!</button>
+    <button style="display: block; margin: 0 auto;" onclick="gen_excuse()" type="button">Generate New Excuse!</button>
   </body>
 </html>
