@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
   <script>
-    var txtFile = "c:/test.txt"
-    var file = new File(txtFile);
+    fetch('file.txt')
+    .then(response => response.text())
+    .then(text => console.log(text))
   </script>
   <head>
     <title>The Pruney Pickle</title>
