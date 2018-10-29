@@ -2,17 +2,17 @@
 <html>
   <script>
     async function gen_excuse () {
-      const response = await fetch('./assets/dictionary/adjectives.txt');
-      const text = await response.text();
-      const adjs = await text.split('\n');
+      const response_1 = await fetch('./assets/dictionary/adjectives.txt');
+      const text_1 = await response_1.text();
+      const adjs = await text_1.split('\n');
       
-      const response = await fetch('./assets/dictionary/nouns.txt');
-      const text = await response.text();
-      const nouns = await text.split('\n');
+      const response_2 = await fetch('./assets/dictionary/nouns.txt');
+      const text_2 = await response_2.text();
+      const nouns = await text_2.split('\n');
       
-      const response = await fetch('./assets/dictionary/verbs.txt');
-      const text = await response.text();
-      const verbs = await text.split('\n');
+      const response_3 = await fetch('./assets/dictionary/verbs.txt');
+      const text_3 = await response_3.text();
+      const verbs = await text_3.split('\n');
       
       
       console.log(adjs[0] + nouns[0] + verbs[0]);
