@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
   <script>
-    nouns = fetch('./assets/dictionary/nouns.txt').then(function(response){
-      return response.text()
-      }).then(function (text){
-        return text.split('\n')
-      }).then(function (nouns){
-        console.log(nouns[0])
-      })
+    const load_adj = async () => {
+    const response = await fetch('./assets/dictionary/adjectives.txt');
+    const text = await response.text();
+    return text.split('\n');
+    }
+    
+    adj = load_adj();
   </script>
   <head>
     <title>The Pruney Pickle</title>
